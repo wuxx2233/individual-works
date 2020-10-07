@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>网页布局</title>
+  <style>
+    *{padding: 0;margin: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none;}
+    body{
+      font-family: '微软雅黑';
+    }
+    .header{
+      /* border: 1px solid green; */
+      height: 50px;
+      background: #1e415d;
+    }
+    .hd_con{
+      width: 1100px;
+      height: 50px;
+      margin: 0 auto;
+    }
+    .header a{
+      color: #eee;
+    }
+    .header a:hover{
+      color: #fff;
+    }
+    .header .logo{
+      font-size: 18px;
+      line-height: 50px;
+      float: left;
+    }
+    .header .nav{
+      float: right;
+    }
+    .header .nav li{
+      float: left;
+    }
+    .header .nav a{
+      font-size: 14px;
+      line-height: 50px;
+      display: block;
+      padding: 0 15px;
+    }
+    .banner{
+      height: 380px;
+      width: 100%;
+      background: #1e415d;
+      text-align: center;
+    }
+    .banner .logo{
+      margin-top: 60px;
+    }
+    .banner p{
+      font-size: 22px;
+      color: #fff;
+      font-weight: 100;
+      margin: 10px auto 40px;
+    }
+    .banner .btn{
+      font-size: 18px;
+      color: #eee;
+      border: 1px solid #eee;
+      padding: 10px 15px;
+    }
+    .banner .btn:hover{
+      color: #fff;
+      border-color: #fff;
+    }
+    .con{
+      width: 1100px;
+      /* border: 1px solid green; */
+      margin: 60px auto 40px;
+      overflow: hidden;
+    }
+    .con .box{
+      float: left;
+      padding: 0 20px;
+      width: 510px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+    .con .box h2{
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .con .box p{
+      font-size: 18px;
+      color: #555;
+      line-height: 1.4em;
+    }
+    .footer{
+      /* background: #000; */
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+      line-height: 2.2em;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="hd_con">
+      <a href="#" class="logo">Python</a>
+      <ul class="nav">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="banner">
+    <img src="images/logo.png" class="logo"/>
+    <p>life is short, use Python.</p>
+    <a href="#" class="btn">了解更多</a>
+  </div>
+  <div class="con">
+    <div class="box">
+      <h2>高级编程语言</h2>
+      <p>设计理念强调可读性</p>
+    </div>
+    <div class="box">
+      <h2>胶水语言</h2>
+      <p>多种语言组合使用</p>
+    </div>
+    <div class="box">
+      <h2>极简风格语言</h2>
+      <p>通过缩进进行区域分隔</p>
+    </div>
+    <div class="box">
+      <h2>解释型语言</h2>
+      <p>无需编译，即写即用</p>
+    </div>
+  </div>
+  <div class="footer">
+    Designed by Changxv
+  </div>
+</body>
+</html>
